@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
         {/* Logo Section */}
         <div className="flex-shrink-0 w-[100px] h-auto">
           <Image 
-            src="/Logo.png" 
+            src="/image/Logo.png" 
             alt="logo"
             width={100}
             height={27.5}
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
            <div className="hidden md:flex items-center">
           <button className="text-black hover:text-gray-600" onClick={() => setIsSearchOpen(!isSearchOpen)}>
             <Image 
-              src="/search.png" 
+              src="/image/search.png" 
               alt="search icon"
               width={20}
               height={20}
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
       <div className="relative mt-4">
       <button className="text-black hover:text-gray-600" onClick={() => setIsSearchOpen(!isSearchOpen)}>
             <Image 
-              src="/search.png" 
+              src="/image/search.png" 
               alt="search icon"
               width={20}
               height={20}
