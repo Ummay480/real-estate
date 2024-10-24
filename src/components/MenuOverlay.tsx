@@ -17,7 +17,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, closeMenu }) => {
     <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex flex-col items-center justify-center z-20">
       <ul className="flex flex-col py-4 items-center space-y-4 bg-white p-6 rounded-md">
         {links.map((link, index) => (
-          <li key={index} className="text-black text-xl hover:bg-gray-200 rounded-md p-2 transition">
+          <li key={index} className="text-black text-xl hover:bg-gray-200 cursor-pointer md:sursor-pointer sm:cursor-pointer rounded-md p-2 transition">
             <NavLink href={link.path} title={link.title} onClick={closeMenu} />
           </li>
         ))}

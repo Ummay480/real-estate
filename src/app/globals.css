@@ -24,7 +24,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-cursor-pointer {
-  cursor: pointer !important;
+  
+  .cursor-pointer {
+    cursor: pointer !important;
+  }
 }
