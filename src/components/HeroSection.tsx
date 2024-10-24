@@ -12,7 +12,7 @@ const HeroSection = () => {
           <p className="font-poppins mt-6 text-center lg:text-left text-sm lg:text-base ml-0 lg:ml-12">
             Welcome to Realestate
           </p>
-          <h1 className="font-poppins text-gray-400 text-2xl lg:text-7xl font-bold text-center lg:text-left ml-0 lg:ml-10 mt-4">
+          <h1 className="font-poppins text-gray-900 text-2xl lg:text-7xl font-bold text-center lg:text-left ml-0 lg:ml-10 mt-4">
             Manage Your Property
           </h1>
           <p className="font-poppins text-center lg:text-left text-sm lg:text-base mt-4 lg:mt-6 ml-0 lg:ml-10">

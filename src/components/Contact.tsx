@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <main className="w-full rounded-3xl max-w-[1380px] h-[457px] mt-10 bg-gradient-to-r from-[#C1DEE8] to-[#FBD9B9] p-4 mb-14">
+    <main className="w-full rounded-3xl max-w-[1380px] h-[457px] -mt-10 bg-gradient-to-r from-[#C1DEE8] to-[#FBD9B9] p-4 mb-14">
       {/* Contact Section */}
       <section className="flex flex-col md:flex-row gap-4 items-start"> {/* Ensured items align to the start */}
         {/* Left Side */}

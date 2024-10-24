@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ProjectSection = () => {
     return (
-        <main className="flex flex-col w-full max-w-[1380px] lg:flex-row items-center justify-center gap-4 px-4 mt-12">
+        <main className="flex flex-col w-full max-w-[1380px] lg:flex-row items-center justify-center gap-4 px-4">
 
             {/* Project 1 */}
             <div className="relative text-black p-6 rounded-lg bg-white border-2 shadow-gray-700 shadow-lg w-full lg:w-1/3">
