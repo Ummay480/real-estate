@@ -8,15 +8,14 @@ const Navbar: React.FC = () => {
   const [isOtherServicesOpen, setIsOtherServicesOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  const menuRef = useRef<HTMLDivElement>(null); // Ref for the mobile menu
-  const searchRef = useRef<HTMLDivElement>(null); // Ref for the search field
-  const otherServicesRef = useRef<HTMLDivElement>(null); // Ref for the other services dropdown
+  const menuRef = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLDivElement>(null);
+  const otherServicesRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
   const toggleOtherServices = () => setIsOtherServicesOpen((prev) => !prev);
   const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
-  // Close the search and other services when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -35,13 +34,10 @@ const Navbar: React.FC = () => {
       }
     };
 
-    // Add event listener when either search or other services is open
-    if (isSearchOpen || isOtherServicesOpen) {
-      document.addEventListener("click", handleClickOutside);
-    }
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isSearchOpen, isOtherServicesOpen]);
 
@@ -92,7 +88,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (For Small Screens) */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
         <div ref={menuRef} className="md:hidden bg-white shadow-md">
           <div className="flex flex-col space-y-2 px-6 py-4">

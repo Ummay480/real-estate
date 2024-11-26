@@ -9,8 +9,7 @@ import HeroSection from "../components/HeroSection";
 const HomePage: React.FC = () => {
   return (
     <main className="flex flex-col container justify-center mx-auto">
-      {/* Navbar */}
-      <Navbar />
+   
 
       {/* Hero Section */}
       <div>
