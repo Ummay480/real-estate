@@ -5,32 +5,17 @@ import { useState, useEffect, useRef } from "react";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isOtherServicesOpen, setIsOtherServicesOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
-  const searchRef = useRef<HTMLDivElement>(null);
-  const otherServicesRef = useRef<HTMLDivElement>(null);
-
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-  const toggleOtherServices = () => setIsOtherServicesOpen((prev) => !prev);
-  const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
-        searchRef.current &&
-        !searchRef.current.contains(event.target as Node) &&
-        isSearchOpen
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        isMenuOpen
       ) {
-        setIsSearchOpen(false);
-      }
-      if (
-        otherServicesRef.current &&
-        !otherServicesRef.current.contains(event.target as Node) &&
-        isOtherServicesOpen
-      ) {
-        setIsOtherServicesOpen(false);
+        setIsMenuOpen(false);
       }
     };
 
@@ -39,7 +24,7 @@ const Navbar: React.FC = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isSearchOpen, isOtherServicesOpen]);
+  }, [isMenuOpen]);
 
   return (
     <nav className="relative w-full max-w-[1380px] h-[90px] mt-10 p-3 rounded-full z-10 bg-gray-50 text-black">
@@ -76,7 +61,7 @@ const Navbar: React.FC = () => {
         {/* Hamburger Menu Icon for Mobile */}
         <div className="relative flex-shrink-0 md:hidden">
           <button
-            onClick={toggleMenu}
+            onClick={() => setIsMenuOpen((prev) => !prev)}
             className="text-black hover:text-gray-600 cursor-pointer"
           >
             <div className="flex flex-col space-y-1">
