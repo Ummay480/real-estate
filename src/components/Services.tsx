@@ -1,10 +1,10 @@
 "use client";
 import React from 'react';
 import Image from "next/image";
-<main className="w-full max-w-[1380px] h-[617px] rounded-3xl mt-10 bg-gradient-to-r from-[#C1DEE8] to-[#FBD9B9]"></main>
+<main className="w-full max-w-[1380px] h-[617px] rounded-3xl ml-20 mt-10 bg-gradient-to-r from-[#C1DEE8] to-[#FBD9B9]"></main>
 const Services = () => {
   return (
-    <main className="w-full max-w-[1380px] flex flex-col md:flex-row items-center justify-center mt-9 gap-8 md:gap-8 p-8">
+    <main className="w-full ml-20 max-w-[1380px] flex flex-col md:flex-row items-center justify-center mt-9 gap-8 md:gap-8 p-8">
 
       {/* Service 1 */}
       <div className="relative text-center md:text-left ">

@@ -7,7 +7,7 @@ const ProjectPage: React.FC = () => {
     <>
           
       <div className='extraspace h-10'>
-      <h1 className="text-4xl my-20 font-bold text-center bg-gray-900 text-transparent bg-clip-text"> Our Services
+      <h1 className="text-4xl my-20 font-bold text-center ml-20 bg-gray-900 text-transparent bg-clip-text"> Our Services
  
       </h1>
 </div>

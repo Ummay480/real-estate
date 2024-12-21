@@ -9,7 +9,7 @@ const AboutPage: React.FC = () => {
 <>
   
   
-        <div className=' flex-center justify-center mx-0 mb-40'>
+        <div className=' flex-center justify-center mb-40'>
           <AboutSection/>
         </div>
 

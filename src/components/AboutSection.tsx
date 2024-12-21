@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="flex w-full max-w-[1380px] flex-col md:flex-row gap-4 md:gap-6 p-4">
+    <section className="flex w-full ml-20 max-w-[1380px] flex-col md:flex-row gap-4 md:gap-6 p-4">
       {/* Left Side */}
       <div className="flex-1 flex flex-col justify-center">
         <h2 className="text-xl md:text-4xl font-extrabold mt-10 md:mt-14 ml-4 md:ml-0">

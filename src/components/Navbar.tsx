@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="relative w-full max-w-[1380px] h-[90px] mt-10 p-3 rounded-full z-10 bg-gray-50 text-black">
+    <nav className="relative ml-20 w-full max-w-[1380px] h-[90px] mt-10 p-3 rounded-full z-10 bg-gray-50 text-black">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo Section */}
         <div className="flex-shrink-0 w-[100px] h-auto">

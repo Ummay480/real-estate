@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <main className="w-full max-w-[1380px] h-auto lg:h-[617px] rounded-3xl mt-8 bg-gradient-to-r from-[#C1DEE8] to-[#FBD9B9]">
+    <main className="w-full max-w-[1380px] h-auto ml-20 lg:h-[617px] rounded-3xl mt-8 bg-gradient-to-r from-[#C1DEE8] to-[#FBD9B9]">
       {/* Hero Section */}
       <section className="flex flex-col-reverse lg:flex-row gap-6 p-6 lg:p-12 mt-10 lg:mt-0">
         {/* Left Side */}

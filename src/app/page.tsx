@@ -8,7 +8,8 @@ import HeroSection from "../components/HeroSection";
 
 const HomePage: React.FC = () => {
   return (
-    <main className="flex flex-col container justify-center mx-auto">
+    <main className="flex flex-col container mx-auto justify-center items-center">
+
    
 
       {/* Hero Section */}
@@ -28,9 +29,9 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* Project Section */}
-      <section id="projects" className="bg-white flex flex-col py-16 mb-0">
-        <p className="text-lg text-left ml-8 -mt-20 text-gray">Best Projects of the Years</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-left ml-6 mt-4 text-black">Our Recent Projects</h1>
+      <section id="projects" className="bg-white flex flex-col py-16 ml-20 mb-0">
+        <p className="text-lg text-left ml-20 -mt-20 text-gray">Best Projects of the Years</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-left ml-20 my-4 text-black">Our Recent Projects</h1>
         <ProjectSection />
       </section>
 
